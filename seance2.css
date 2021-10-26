@@ -1,0 +1,17 @@
+
+.one {
+	border-style: solid;
+    border-color: red;
+   border-width: 1px 1px 1px 1px;
+}
+.two {
+	background: black;
+}
+h2 , h1 {
+	color: grey;
+}
+section.s h2
+{   border-style: solid;
+	border-color: green;
+
+}
