@@ -1,0 +1,75 @@
+/*red border around the image */
+/*<link rel="stylesheet" href="amazing.css"/>*/
+img{
+    border: 1px solid red;
+}
+
+h1{
+    background-color: black;
+}
+
+h1,h2{
+    color: gray;
+}
+
+section.s h2{
+    border: 1px solid green;
+}
+/* section#mon div:first-of-type{
+    
+}
+HERE I THOUGHT I M GONNA SELECT THE THE FIRST DIV TAG
+UNDER THE SECTION BUT I END UP SELECTING 
+ALL THE DIV THAT ARE THE FIRST DIV OF THEIR PARENTS 
+*/
+
+/* elements de niveau 1 */
+section#mon > span{
+    color: pink;
+}
+
+/* les elements qui ne sont pas de niveau 1 */
+section#mon div span{
+    border: 1px solid red;
+
+}
+
+/*les elements de niveau 2 */
+section#mon > div > span:first-child{
+    background-color: yellow; 
+}
+/* change color when hovoring on wednesday */
+
+section#wed h2:hover{
+color:green;
+}
+/* change color when hovoring on monday or tuesday */
+section#mon h2:hover, section#tue h2:hover{
+    color: red;
+}
+/* ecrit en gras le premier element de la liste */
+
+ul li:first-of-type{
+    font-weight :bold;
+}
+/* ecrit en rouge le 2 nd element de la liste */
+
+ul li:nth-child(2){
+    color:red;
+}
+/*montre en bleu les premier elemnents du tuesday */
+section#tue span:first-of-type{
+  color: blue;  
+}
+/*agrandir les elements de num 2 */
+section#tue span:nth-of-type(2){
+    font-size: 200%;
+}
+/*afficher le 9 em element de la liste en bleu */
+ul li:nth-of-type(9){
+    color:blue;
+}
+/* affiche un element parmis 5 en vert */
+ul li:nth-of-type(5n+3){
+    color:green;
+}
